@@ -43,6 +43,7 @@ subdir-ccflags-$(CONFIG_INTEL_IPU_ACPI) += \
 endif
 
 subdir-ccflags-y += -I$(src)/include
+subdir-ccflags-y += -include $(src)/include/fedora-compat.h
 
 subdir-ccflags-$(CONFIG_IPU_BRIDGE) += \
 	-DCONFIG_IPU_BRIDGE
